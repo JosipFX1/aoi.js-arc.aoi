@@ -1,7 +1,7 @@
 {
   "name": "aoi.js",
   "version": "6.9.0",
-  "description": "A powerful package to create Discord Bots with built-in string functions.",
+  "description": "A powerful package to create Discord Bots with built-in string functions. Modified and Optimized for arc.aoi",
   "author": "Leref <itzleref@gmail.com>",
   "main": "src/index.js",
   "typings": "src/index.d.ts",
