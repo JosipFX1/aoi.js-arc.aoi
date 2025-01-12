@@ -6,21 +6,21 @@ module.exports = async () => {
         AoiError.createConsoleMessage(
             [
                 {
-                    text: `Installed on v${json.version}`,
+                    text: `Installed on V${json.version}`,
                     textColor: "green"
                 },
                 {
-                    text: "https://discord.gg/HMUfMXDQsV",
+                    text: "https://discord.gg/MmJ3PQWVSS",
                     textColor: "blue"
                 }
             ],
             "white",
             {
-                text: "aoi.js ",
+                text: "arc.aoi",
                 textColor: "cyan"
             }
         );
     } catch (err) {
-        console.error(`AoiLogs: Error during initialization: ${err}`);
+        console.error(`ArcLogs: Error during initialization: ${err}`);
     }
 };

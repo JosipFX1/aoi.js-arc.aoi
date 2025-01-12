@@ -24,7 +24,7 @@ module.exports = async () => {
                         textColor: "white"
                     },
                     {
-                        text: "aoi.js is outdated!",
+                        text: "arc.aoi is outdated!",
                         textColor: "red"
                     },
                     {
@@ -36,20 +36,20 @@ module.exports = async () => {
                         textColor: "white"
                     },
                     {
-                        text: "Installing latest aoi.js version...",
+                        text: "Installing latest arc.aoi version...",
                         textColor: "yellow"
                     }
                 ],
                 "white",
-                { text: "aoi.js AutoUpdate ", textColor: "yellow" }
+                { text: "arc.aoi AutoUpdate ", textColor: "yellow" }
             );
 
-            const Process = exec("npm i aoi.js@latest", (error) => {
+            const Process = exec("npm i arc.aoi@latest", (error) => {
                 if (error)
                     return AoiError.createConsoleMessage(
                         [
                             {
-                                text: `aoi.js AutoUpdate: ERR! ${error.message}`,
+                                text: `arc.aoi AutoUpdate: ERR! ${error.message}`,
                                 textColor: "red"
                             }
                         ],
@@ -60,7 +60,7 @@ module.exports = async () => {
                 AoiError.createConsoleMessage(
                     [
                         {
-                            text: `Successfully Installed aoi.js v${data["dist-tags"].latest}.`,
+                            text: `Successfully Installed arc.aoi v${data["dist-tags"].latest}.`,
                             textColor: "white"
                         },
                         {
@@ -73,7 +73,7 @@ module.exports = async () => {
                         }
                     ],
                     "white",
-                    { text: "aoi.js AutoUpdate  ", textColor: "yellow" }
+                    { text: "arc.aoi AutoUpdate  ", textColor: "yellow" }
                 );
 
                 setTimeout(Reboot, 3000);
@@ -85,12 +85,12 @@ module.exports = async () => {
         AoiError.createConsoleMessage(
             [
                 {
-                    text: "aoi.js AutoUpdate: Unexpected error when trying to reach API.",
+                    text: "arc.aoi AutoUpdate: Unexpected error when trying to reach API.",
                     textColor: "red"
                 }
             ],
             "white",
-            { text: "aoi.js AutoUpdate ", textColor: "yellow" }
+            { text: "arc.aoi AutoUpdate ", textColor: "yellow" }
         );
     }
 };
@@ -109,12 +109,12 @@ function Reboot() {
         AoiError.createConsoleMessage(
             [
                 {
-                    text: `aoi.js AutoUpdate: ERR! Failed to commence 'RESTART', ${e.message}`,
+                    text: `arc.aoi AutoUpdate: ERR! Failed to commence 'RESTART', ${e.message}`,
                     textColor: "red"
                 }
             ],
             "white",
-            { text: "aoi.js AutoUpdate ", textColor: "yellow" }
+            { text: "arc.aoi AutoUpdate ", textColor: "yellow" }
         );
     }
 }

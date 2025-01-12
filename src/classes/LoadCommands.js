@@ -222,7 +222,7 @@ class LoadCommands {
                     }))
                 ],
                 "white",
-                { text: "LoadCommands", textColor: "cyan" }
+                { text: "LoadCommands", textColor: "blue" }
             );
         }
     }
