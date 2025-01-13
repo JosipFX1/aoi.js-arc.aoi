@@ -1,4 +1,3 @@
-const json = require("../../package.json");
 const AoiError = require("../classes/AoiError.js");
 
 module.exports = async () => {
@@ -6,7 +5,7 @@ module.exports = async () => {
         AoiError.createConsoleMessage(
             [
                 {
-                    text: `Installed on V${json.version}`,
+                    text: `Installed on V1.0.2`,
                     textColor: "green"
                 },
                 {
