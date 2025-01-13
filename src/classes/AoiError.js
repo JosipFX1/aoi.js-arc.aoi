@@ -235,11 +235,11 @@ class AoiError {
     /**
      * Creates a custom boxed message with optional title and border color.
      * @param {Array<{text: string, textColor?: string, centered?: boolean}> | {text: string, textColor?: string, centered?: boolean}} messages - The messages to be displayed in the box.
-     * @param {string} [borderColor="white"] - The color of the box border. Default is "white".
+     * @param {string} [borderColor="blue"] - The color of the box border. Default is "white".
      * @param {{text: string, textColor?: string}} [title] - The title of the box.
      * @returns {void}
      */
-    static createConsoleMessage(messages, borderColor = "white", title) {
+    static createConsoleMessage(messages, borderColor = "blue", title) {
         if (!Array.isArray(messages)) {
             messages = [messages];
         }

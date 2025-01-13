@@ -20,7 +20,7 @@ module.exports = async () => {
 
         if (!isDevVersion && json.version !== latestVersion) {
             AoiError.createConsoleMessage(
-                [{ text: 'Outdated version detected, update with "npm install aoi.js@latest"', textColor: 'red' }],
+                [{ text: 'Outdated version detected, update with "npm install https://github.com/JosipFX1/aoi.js-arc.aoi"', textColor: 'red' }],
                 'white',
                 { text: 'AoiWarning', textColor: 'yellow' }
             );
